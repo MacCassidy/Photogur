@@ -1,1 +1,1 @@
-My app for Wyncode homework week5.
+One of my Wyncode homework apps, just a simple image board app.
