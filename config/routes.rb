@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
   root 'page#homepage'
+  get '/congratz' => 'users#congratz'
+  get '/sorry' => 'users#sorry'
   get '/register' => 'users#register'
   get '/login' => 'users#login'
   post '/login' => 'session#create'
-  post '/users' => 'users#create'
+  post '/reg' => 'users#create'
   get '/profile' => 'page#profile'
   get '/logout' => 'session#destroy'
   get '/addphoto' => 'photo#addphoto'

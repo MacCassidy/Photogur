@@ -3,7 +3,7 @@
 <%=link_to 'Logout', logout_path%>
 
 <% if @user.photos.length == 0%>
-<h2><%= you have no photos%></h2>
+<h2><%= "you have no photos"%></h2>
 <%else%>
 <%= render 'picture_table', user: @user %>
 <%end%>
