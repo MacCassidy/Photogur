@@ -1,0 +1,21 @@
+<h1>Add photo</h1>
+<%= form_tag '/addphoto' do %>
+
+  <div class="field">
+    <%= label_tag 'Title' %>
+    <%= text_field_tag :title %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'Image Url' %>
+    <%= text_field_tag :url %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'Caption'%>
+    <%= text_field_tag :caption%>
+</div>
+
+  <%= submit_tag "Login" %>
+
+<% end %>

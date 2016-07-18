@@ -1,0 +1,11 @@
+<h1><%= @user.name%>'s Photogur image board</h1>
+<%=link_to 'Add a photo', addphoto_path%>
+<%=link_to 'Logout', logout_path%>
+
+<% if @user.photos.length == 0%>
+<h2><%= you have no photos%></h2>
+<%else%>
+<%= render 'picture_table', user: @user %>
+<%end%>
+<%=link_to 'Add a photo', addphoto_path%>
+<%=link_to 'Logout', logout_path%>

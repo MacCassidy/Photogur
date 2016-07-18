@@ -1,0 +1,11 @@
+<div class="phototable">
+  <% z = 1%>
+  <% user.photos.each do |x|%>
+  <h3>Image <%= z%></h3>
+  <h5>Title: <%= x.title%><h5>
+    <%= image_tag x.url%>
+    <p>added: <%= x.created_at%></p>
+    <p><%= x.caption%></p>
+    <%z += 1%>
+  <%end%>
+</div>
